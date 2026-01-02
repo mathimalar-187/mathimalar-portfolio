@@ -7,3 +7,22 @@ a{
   background-color: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .app {
+    margin: 80px 0;
+  }
+
+  .app > h1 {
+    font-size: 26px;
+  }
+
+  .app > p {
+    font-size: 14px;
+  }
+
+  .app{
+    gap: 25px;
+  }
+}
+
+
