@@ -24,6 +24,12 @@ const projectcontainer = () => {
    desc:" A fresh fruit buying platform for online customers.",
    link:"https://github.com/mathimalar-187/fruit-shop.git",
 },
+{
+   img :"/src/assets/flight.jpeg",
+   title:"Happy Fly",
+   desc:" Flight booking app.",
+   link:"https://github.com/mathimalar-187/happy-fly.git",
+},
     ]
   return (
     <Element className='projectcontainer' name='project'>
