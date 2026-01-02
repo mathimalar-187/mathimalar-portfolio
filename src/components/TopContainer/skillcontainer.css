@@ -1,56 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.skillcontainer{
+
+.skillcontainer {
     display: flex;
     align-items: center;
-    justify-items: center;
-    margin: 200px 0;
+    justify-content: center;
+    margin: 120px 0;
+    padding: 0 2rem;
+    gap: 3rem;
 }
-.skillcontainer__text{
-    color: #f64c08;
-    flex: 0.6;
-    text-align: left;
-    max-width: 500px;
-    margin-bottom: 20px;
-}
-.skillcontainer__text > h2{
-    font-size: 30px;
-}
-.skillcontainer__img{
+
+.skillcontainer__img {
     flex: 0.4;
     text-align: center;
-    margin-right: 90px;
 }
-.skillcontainer__img > img{
-    width: 600px;
-    border-radius: 3px;
+
+.skillcontainer__img > img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
     object-fit: contain;
 }
-.skillcontainer__skillset > h5{
-font-family: "Crimson",sans-serif;
-font-weight: 300;
-padding-bottom: 15px;
-padding-top: 10px;
-color: white;
+
+.skillcontainer__text {
+    color: #f64c08;
+    flex: 0.6;
+    max-width: 600px;
 }
 
-.skillcontainer__slider > .MuiLinearProgress-colorPrimary{
+.skillcontainer__text > h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skillcontainer__skillset {
+    margin-bottom: 1.5rem;
+}
+
+.skillcontainer__skillset > h5 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    padding-bottom: 0.5rem;
+    color: white;
+    margin: 0;
+}
+
+.skillcontainer__slider > .MuiLinearProgress-colorPrimary {
     background-color: rgb(88, 88, 88);
 }
+
+.skillcontainer__slider {
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .skillcontainer {
-    margin: 80px 0;
-  }
+    .skillcontainer {
+        flex-direction: column;
+        margin: 80px 0;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+    
+    .skillcontainer__img {
+        flex: none;
+        order: 2;
+    }
+    
+    .skillcontainer__img > img {
+        max-width: 300px;
+    }
+    
+    .skillcontainer__text {
+        flex: none;
+        order: 1;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .skillcontainer__text > h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    .skillcontainer__skillset {
+        margin-bottom: 1.25rem;
+    }
+}
 
-  .skillcontainer > h1 {
-    font-size: 26px;
-  }
-
-  .skillcontainer > p {
-    font-size: 14px;
-  }
-
-  .skillcontainer{
-    gap: 25px;
-  }
+@media (max-width: 480px) {
+    .skillcontainer {
+        margin: 60px 0;
+        padding: 0 0.75rem;
+        gap: 1.5rem;
+    }
+    
+    .skillcontainer__img > img {
+        max-width: 250px;
+    }
+    
+    .skillcontainer__skillset {
+        margin-bottom: 1rem;
+    }
+    
+    .skillcontainer__slider {
+        height: 6px;
+    }
 }
 

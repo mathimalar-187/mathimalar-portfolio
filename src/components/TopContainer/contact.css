@@ -1,45 +1,95 @@
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
-    margin: 200px 0 100px;
     align-items: center;
+    margin: 120px 0 80px;
+    padding: 2rem;
+    background-color: #000;
 }
-.contact_container{
-    border: 1px solid white;
-    width: 600px;
-    height: 200px;
+
+.contact > h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #f64c08;
+    margin-bottom: 2rem;
+}
+
+.contact_container {
+    border: 2px solid white;
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    margin-top: 20px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
 }
-.contact_container > p{
-    font-size: 20px;
-    text-align: left;
-    padding-bottom: 10px;
+
+.contact_container > p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
-.contact_container > p > span{
+
+.contact_container > p > span {
     color: #f64c08;
+    font-weight: 600;
 }
+
+.contact_container > div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .contactcontainer {
-    margin: 80px 0;
-  }
+    .contact {
+        margin: 80px 0 60px;
+        padding: 1.5rem;
+    }
+    
+    .contact > h1 {
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact_container {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+    
+    .contact_container > p {
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        margin-bottom: 0.75rem;
+    }
+}
 
-  .contactcontainer > h1 {
-    font-size: 26px;
-  }
-
-  .contactcontainer > p {
-    font-size: 14px;
-  }
-
-  .contactcontainer {
-    gap: 25px;
-  }
+@media (max-width: 480px) {
+    .contact {
+        margin: 60px 0 40px;
+        padding: 1rem;
+    }
+    
+    .contact_container {
+        padding: 1.25rem;
+        min-height: 160px;
+    }
+    
+    .contact_container > p {
+        font-size: clamp(0.85rem, 4vw, 1rem);
+        word-break: break-word;
+    }
+    
+    .contact_container > div {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 

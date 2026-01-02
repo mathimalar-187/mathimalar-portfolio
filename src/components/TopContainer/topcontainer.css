@@ -1,25 +1,27 @@
-.topcontainer{
+.topcontainer {
     background: url("/src/assets/space1.jpg");
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 @media (max-width: 768px) {
-  .topcontainer {
-    margin: 80px 0;
-  }
+    .topcontainer {
+        min-height: 80vh;
+        background-attachment: scroll;
+        padding: 2rem 0;
+    }
+}
 
-  .topcontainer > h1 {
-    font-size: 26px;
-  }
-
-  .topcontainer > p {
-    font-size: 14px;
-  }
-
-  .topcontainer{
-    gap: 25px;
-  }
+@media (max-width: 480px) {
+    .topcontainer {
+        min-height: 70vh;
+        padding: 1rem 0;
+    }
 }
