@@ -26,11 +26,6 @@
 }
 @media (max-width: 768px) {
   .projectcontainer {
-    padding: 30px 20px;
-  }
-}
-@media (max-width: 768px) {
-  .projectcontainer {
     padding: 20px;
   }
 
