@@ -3,10 +3,10 @@ import { Element } from 'react-scroll'
 import Project1 from './project1'
 import './projectcontainer.css'
 
-import expense from '../../assets/expense.webp';
+import expense from '../../assets/exp.jpeg';
 import dashboard from '../../assets/dashboard.png';
 import fruit from '../../assets/fruit.jpg';
-import flight from '../../assets/flight.jpeg';
+import flight from '../../assets/fligh.jpg';
 
 
 const ProjectContainer = () => {
