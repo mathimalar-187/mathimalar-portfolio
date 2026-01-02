@@ -8,6 +8,8 @@
     top: 0;
     position: sticky;
     z-index: 2000;
+    justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header__left{
     flex: 0.4;
@@ -53,3 +55,9 @@ cursor: pointer;
     border-radius: 2px;
     cursor: pointer;
 }
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
